@@ -1,0 +1,5 @@
+<bean id="bookRepository" class="com.example.librarymanagement.BookRepository" />
+
+<bean id="bookService" class="com.example.librarymanagement.BookService">
+    <constructor-arg ref="bookRepository" />
+</bean>
